@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
                 .addAction(R.drawable.ic_airport_shuttle_black_24dp, "No", noPendingIntent)
                 /*.setStyle(new NotificationCompat.DecoratedCustomViewStyle())
                 .setCustomContentView(normal_layout)
-                .setCustomBigContentView(expended_layout)*/
-                .setProgress(100, 0, false)
+                .setCustomBigContentView(expended_layout)
+                .setProgress(100, 0, false)*/
                 .setSmallIcon(R.drawable.ic_beach_access_black_24dp);
         manager.notify(Constants.NOTIFICATION_ID, builder.build());
 
-
+/*
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         thread.start();
+
+        */
 
     }
 
