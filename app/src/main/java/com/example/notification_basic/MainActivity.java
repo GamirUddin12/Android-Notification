@@ -51,17 +51,17 @@ public class MainActivity extends AppCompatActivity {
         final NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), "Simplified coding")
                 .setContentTitle("Simplified coding")
                 .setContentText("fff")
-               .setContentIntent(pendingIntent)
-                .addAction(R.drawable.ic_ac_unit_black_24dp, "Yes", yesPendingIntent)
+                .setContentIntent(pendingIntent)
+                /*.addAction(R.drawable.ic_ac_unit_black_24dp, "Yes", yesPendingIntent)
                 .addAction(R.drawable.ic_airport_shuttle_black_24dp, "No", noPendingIntent)
-                /*.setStyle(new NotificationCompat.DecoratedCustomViewStyle())
+                .setStyle(new NotificationCompat.DecoratedCustomViewStyle())
                 .setCustomContentView(normal_layout)
-                .setCustomBigContentView(expended_layout)
-                .setProgress(100, 0, false)*/
+                .setCustomBigContentView(expended_layout)*/
+                .setProgress(100, 0, false)
                 .setSmallIcon(R.drawable.ic_beach_access_black_24dp);
         manager.notify(Constants.NOTIFICATION_ID, builder.build());
 
-/*
+
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -85,9 +85,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         thread.start();
-
-        */
-
     }
 
     public void onNotify(View view) {
