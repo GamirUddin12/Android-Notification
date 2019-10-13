@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
             manager.createNotificationChannel(channel);
         }
 
-        RemoteViews normal_layout = new RemoteViews(getPackageName(), R.layout.custom_normal);
-        RemoteViews expended_layout = new RemoteViews(getPackageName(), R.layout.custom_expended);
+        /*RemoteViews normal_layout = new RemoteViews(getPackageName(), R.layout.custom_normal);
+        RemoteViews expended_layout = new RemoteViews(getPackageName(), R.layout.custom_expended);*/
 
 
         final NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), "Simplified coding")
