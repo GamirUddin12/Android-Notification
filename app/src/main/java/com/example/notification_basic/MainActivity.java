@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void displayNotification() {
 
-        Intent intent = new Intent(this, AlertDetails.class);
+        /*Intent intent = new Intent(this, AlertDetails.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent noIntent = new Intent(this, NoActivity.class);
         noIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        PendingIntent noPendingIntent = PendingIntent.getActivity(this, 0, noIntent, PendingIntent.FLAG_ONE_SHOT);
+        PendingIntent noPendingIntent = PendingIntent.getActivity(this, 0, noIntent, PendingIntent.FLAG_ONE_SHOT);*/
 
 
         final NotificationManager manager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
@@ -49,15 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         final NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), "Simplified coding")
-                //.setContentTitle("Simplified coding")
-                //.setContentText("fff")
-                .setContentIntent(pendingIntent)
-//                .addAction(R.drawable.ic_ac_unit_black_24dp, "Yes", yesPendingIntent)
-//                .addAction(R.drawable.ic_airport_shuttle_black_24dp, "No", noPendingIntent)
+                .setContentTitle("Simplified coding")
+                .setContentText("fff")
+/*                .setContentIntent(pendingIntent)
+                .addAction(R.drawable.ic_ac_unit_black_24dp, "Yes", yesPendingIntent)
+                .addAction(R.drawable.ic_airport_shuttle_black_24dp, "No", noPendingIntent)
                 .setStyle(new NotificationCompat.DecoratedCustomViewStyle())
                 .setCustomContentView(normal_layout)
                 .setCustomBigContentView(expended_layout)
-                //.setProgress(100, 0, false)
+                .setProgress(100, 0, false)*/
                 .setSmallIcon(R.drawable.ic_beach_access_black_24dp);
         manager.notify(Constants.NOTIFICATION_ID, builder.build());
 
